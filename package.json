@@ -1,6 +1,6 @@
 {
-  "name": "@tbs/btn-loading",
-  "version": "0.0.1",
+  "name": "tbstu-btn-loading",
+  "version": "0.0.2",
   "description": "Vue loading button component base on bootstrap",
   "main": "dist/btn-loading.common.js",
   "keywords": [
