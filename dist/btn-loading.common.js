@@ -416,9 +416,7 @@ var component = normalizeComponent(
 /* harmony default export */ var BtnLoading = (component.exports);
 // CONCATENATED MODULE: ./src/btn-loading.js
 
-/* harmony default export */ var btn_loading = ({
-  BtnLoading: BtnLoading
-});
+/* harmony default export */ var btn_loading = (BtnLoading);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 

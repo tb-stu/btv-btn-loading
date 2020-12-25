@@ -1,5 +1,2 @@
 import BtnLoading from './components/BtnLoading'
-
-export default {
-  BtnLoading
-}
+export default BtnLoading

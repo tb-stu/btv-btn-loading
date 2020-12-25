@@ -1,5 +1,5 @@
 {
-  "name": "tbs-btn-loading",
+  "name": "@tbs/btn-loading",
   "version": "0.0.1",
   "description": "Vue loading button component base on bootstrap",
   "main": "dist/btn-loading.common.js",
@@ -25,6 +25,11 @@
     "axios": "^0.21.1",
     "vue-template-compiler": "^2.6.11"
   },
+  "files": [
+    "dist/*",
+    "*.json",
+    "*.md"
+  ],
   "author": "Supasin Dum-umpai",
   "license": "MIT",
   "bugs": {
