@@ -1,28 +1,74 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="mt-5 d-flex justify-content-around">
+    <btn-loading
+        class="btn btn-primary"
+        :fn="testFn"
+        icon="fa fa-save"
+        @success="showSuccess"
+        @fail="showFail"
+    >
+      Button spin
+    </btn-loading>
+
+    <btn-loading
+        class="btn btn-primary"
+        :stop-spin="true"
+        :fn="testFn"
+        icon="fa fa-save"
+        @success="showSuccess"
+        @fail="showFail"
+    >
+      Button stop spin
+    </btn-loading>
+
+    <btn-loading
+        class="btn btn-primary"
+        :stop-spin="true"
+        :fn="testFn"
+        @success="showSuccess"
+        @fail="showFail"
+    >
+      Button without icon
+    </btn-loading>
+
+    <btn-loading
+        class="btn btn-primary"
+    >
+      Button not pass fn
+    </btn-loading>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BtnLoading from './components/BtnLoading'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    BtnLoading
+  },
+
+  methods: {
+    testFn () {
+      return axios.get('https://jsonplaceholder.typicode.com/posts', {
+        params: {
+          q: Math.random(),
+        }
+      })
+    },
+
+    showSuccess (success) {
+      alert(`success: ${success}`)
+    },
+
+    showFail () {
+      alert('fail')
+    },
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "~bootstrap/dist/css/bootstrap.min.css";
 </style>

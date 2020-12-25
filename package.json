@@ -1,42 +1,34 @@
 {
-  "name": "btn-loading",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tbs-btn-loading",
+  "version": "0.0.1",
+  "description": "Vue loading button component base on bootstrap",
+  "main": "dist/btn-loading.common.js",
+  "keywords": [
+    "button",
+    "loadding"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name btn-loading src/btn-loading.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "axios": "^0.21.1",
     "vue-template-compiler": "^2.6.11"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+  "author": "Supasin Dum-umpai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tb-stu/btv-btn-loading/issues"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "homepage": "https://github.com/tb-stu/btv-btn-loading#readme"
 }
